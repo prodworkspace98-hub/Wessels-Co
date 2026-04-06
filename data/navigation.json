@@ -1,0 +1,16 @@
+{
+  "section": {
+    "logo": {
+      "src": "assets/Logo.svg",
+      "alt": "Logo",
+      "href": "#"
+    },
+    "menu": [
+      { "text": "About", "href": "#about" },
+      { "text": "Services", "href": "#services" },
+      { "text": "Skills", "href": "#skills" },
+      { "text": "Pricing", "href": "#packages" },
+      { "text": "Contact", "href": "#contact" }
+    ]
+  }
+}

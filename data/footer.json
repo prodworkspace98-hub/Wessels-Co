@@ -1,0 +1,26 @@
+{
+  "section": {
+    "brand": {
+      "title": "MC Codes",
+      "tagline": "Modern Frontend Development"
+    },
+    "links": [
+      {
+        "icon": "/assets/github.svg",
+        "alt": "Github",
+        "url": "https://github.com/prodworkspace98-hub"
+      },
+      {
+        "icon": "/assets/lindkedn.svg",
+        "alt": "LinkedIn",
+        "url": "https://www.linkedin.com/in/michael-l-a89535184/"
+      },
+      {
+        "icon": "/assets/gmail.svg",
+        "alt": "Gmail",
+        "url": "mailto:mccodeui@gmail.com"
+      }
+    ],
+    "copyright": "© 2026 MC Codes. All rights reserved."
+  }
+}

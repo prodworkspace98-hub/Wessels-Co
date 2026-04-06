@@ -1,0 +1,30 @@
+{
+  "section": {
+    "content": {
+      "heading": "Let's Work Together"
+    },
+    "cards": [
+      {
+        "title": "Email",
+        "icon": {
+          "src": "/assets/Icon Email me.svg",
+          "alt": "Email"
+        },
+        "text": "mccodeui@gmail.com"
+      },
+      {
+        "title": "Location",
+        "icon": {
+          "src": "/assets/Icon Location.svg",
+          "alt": "Location"
+        },
+        "text": "Remote / South Africa"
+      }
+    ],
+    "cta": {
+      "text": "Get In Touch",
+      "href": "mailto:mccodeui@gmail.com",
+      "class": "btn btn-primary"
+    }
+  }
+}

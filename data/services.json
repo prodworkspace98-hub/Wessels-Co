@@ -1,0 +1,63 @@
+{
+  "section": {
+    "class": "container",
+    "content": {
+      "heading": "Services",
+      "subtext": "What I can do for you"
+    },
+    "cards": [
+      {
+        "title": "Frontend Development",
+        "icon": {
+          "src": "/assets/Frontend Development.svg",
+          "alt": "Frontend Development",
+          "loading": "lazy"
+        },
+        "items": [
+          "Angular Applications",
+          "Responsive Web Development",
+          "UI Implementation from Figma"
+        ]
+      },
+      {
+        "title": "Website Development",
+        "icon": {
+          "src": "/assets/Web development Icon.svg",
+          "alt": "Web Development",
+          "loading": "lazy"
+        },
+        "items": [
+          "Business websites",
+          "Landing pages",
+          "Portfolio sites"
+        ]
+      },
+      {
+        "title": "UI Development",
+        "icon": {
+          "src": "/assets/UI Development.svg",
+          "alt": "UI Development",
+          "loading": "lazy"
+        },
+        "items": [
+          "Figma to HTML/CSS",
+          "Tailwind UI builds",
+          "Component-based UI systems"
+        ]
+      },
+      {
+        "title": "Optimization",
+        "icon": {
+          "src": "/assets/Optimisation.svg",
+          "alt": "Optimization",
+          "loading": "lazy"
+        },
+        "items": [
+          "Performance tuning",
+          "SEO optimization",
+          "Code refactoring"
+        ]
+      }
+    ]
+  }
+}
