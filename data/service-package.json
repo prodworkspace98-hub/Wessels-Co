@@ -1,0 +1,65 @@
+{
+  "section": {
+    "content": {
+      "heading": "Service Packages"
+    },
+    "cards": [
+      {
+        "title": "Starter Website",
+        "price": "R6,500",
+        "description": "Perfect for small businesses and startups",
+        "divide": 3,
+        "recommended": false,
+        "features": [
+          "5 pages",
+          "Responsive design",
+          "Contact form",
+          "Basic SEO",
+          "2 weeks delivery"
+        ],
+        "button": {
+          "text": "Get Started",
+          "variant": "default"
+        }
+      },
+      {
+        "title": "Business Website",
+        "price": "R12,000",
+        "description": "For growing businesses that need more",
+        "divide": 3,
+        "recommended": true,
+        "features": [
+          "Custom design",
+          "CMS integration",
+          "Performance optimization",
+          "Analytics setup",
+          "Mobile-first approach",
+          "3 weeks delivery"
+        ],
+        "button": {
+          "text": "Get Started",
+          "variant": "primary"
+        }
+      },
+      {
+        "title": "Premium Website",
+        "price": "R25,000+",
+        "description": "Full-scale custom web applications",
+        "divide": 3,
+        "recommended": false,
+        "features": [
+          "Custom UI/UX design",
+          "Advanced features",
+          "API integrations",
+          "E-commerce functionality",
+          "Custom animations",
+          "Ongoing support"
+        ],
+        "button": {
+          "text": "Get Started",
+          "variant": "default"
+        }
+      }
+    ]
+  }
+}

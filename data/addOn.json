@@ -1,0 +1,41 @@
+{
+  "section": {
+    "content": {
+      "heading": "Add-On Services"
+    },
+    "groups": [
+      {
+        "rows": [
+          {
+            "service": "Emergency bug fix",
+            "price": "R900 - R2,500"
+          },
+          {
+            "service": "Landing page build",
+            "price": "R1,500 - R4,000"
+          },
+          {
+            "service": "Website redesign",
+            "price": "R5,000 - R20,000"
+          }
+        ]
+      },
+      {
+        "rows": [
+          {
+            "service": "SEO optimization",
+            "price": "R1,500 - R5,000"
+          },
+          {
+            "service": "Speed optimization",
+            "price": "R1,000 - R3,000"
+          },
+          {
+            "service": "New feature",
+            "price": "R500 - R1,100/hr"
+          }
+        ]
+      }
+    ]
+  }
+}

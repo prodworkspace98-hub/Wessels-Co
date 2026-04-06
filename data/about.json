@@ -1,0 +1,10 @@
+{
+  "title": "About Me",
+  "paragraphs": [
+    "Hi, I'm <strong>Michael</strong>, a frontend developer behind <strong class='txt-clr'>MC Codes</strong>.",
+    "I specialize in building modern, responsive web applications using <strong>Angular, TypeScript, and Tailwind CSS</strong>.",
+    "My focus is clean architecture, scalable frontend systems, and user experiences that perform across all devices.",
+    "I help startups, agencies, and businesses turn designs into fast, reliable, and maintainable web applications."
+  ],
+  "highlight": "My goal is simple: clean code, great UI, and reliable performance."
+}
