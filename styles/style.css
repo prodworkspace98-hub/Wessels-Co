@@ -1,44 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-/* Colors Start */
-/* <-==========================================-> */
+  /* Colors Start */
+  /* <-==========================================-> */
 
-/* Core Brand */
---color-primary: #5D4157;
---color-primary-dark: #3A2936;
---color-secondary: #C5B3C0;
+  /* Core Brand */
+  --color-primary: #5D4157;
+  --color-primary-dark: #3A2936;
+  --color-secondary: #C5B3C0;
 
-/* Neutrals */
---color-white: #FFFFFF;
---color-light: #F9F9F9;
---color-gray-100: #E5E7EB;
---color-gray-400: #4A5565;
---color-gray-500: #364153;
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-light: #F9F9F9;
+  --color-gray-100: #E5E7EB;
+  --color-gray-400: #4A5565;
+  --color-gray-500: #364153;
 
-/* Accent / Deep */
---color-accent-dark: #00160A;
+  /* Accent / Deep */
+  --color-accent-dark: #00160A;
 
-/* Surfaces */
---surface-1: #FFFFFF;
---surface-2: #F9F9F9;
---surface-3: #E5E7EB;
+  /* Surfaces */
+  --surface-1: #FFFFFF;
+  --surface-2: #F9F9F9;
+  --surface-3: #E5E7EB;
 
-/* Text */
---text-primary: #364153;
---text-secondary: #4A5565;
---text-muted: #C5B3C0;
---text-inverse: #FFFFFF;
+  /* Text */
+  --text-primary: #364153;
+  --text-secondary: #4A5565;
+  --text-muted: #C5B3C0;
+  --text-inverse: #FFFFFF;
 
-/* Gradients */
---gradient-primary: linear-gradient(135deg, #5D4157, #3A2936);
---gradient-light: linear-gradient(135deg, #FFFFFF, #F9F9F9);
---gradient-accent: linear-gradient(135deg, #C5B3C0, #B39DB0, #5D4157);
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #5D4157, #3A2936);
+  --gradient-light: linear-gradient(135deg, #FFFFFF, #F9F9F9);
+  --gradient-accent: linear-gradient(135deg, #C5B3C0, #B39DB0, #5D4157);
 
-/* Utility */
---border-color: #E5E7EB;
+  /* Utility */
+  --border-color: #E5E7EB;
 
-/* Colors End */
-/* <-==========================================-> */
+  /* Colors End */
+  /* <-==========================================-> */
   /*Font Start*/
   /*<-==========================================->*/
   --fs-Large-20: 20px;
@@ -232,11 +233,11 @@ nav a {
   text-decoration: none;
   color: var(--color-primary-dark);
   font-size: var(--fs-Large-20);
-  font-weight:var(--fw-bold);
+  font-weight: var(--fw-bold);
 }
 
 header img {
-  width: 12rem;
+  width: 20rem;
   height: auto;
 }
 
@@ -247,10 +248,10 @@ header img {
 .btn {
   text-align: center;
   padding: 2rem 3.5rem;
-  border-radius: 1.4rem;
-  height: 7rem;
+  border-radius: 5rem;
+  height: auto;
+  max-height: 6.5rem;
   font-size: var(--fs-Normal-16);
-  height: 7rem;
   font-weight: 500;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(93, 65, 87, 0.6);
@@ -358,41 +359,74 @@ header img {
 }
 
 .Header-Section {
+  position: relative;
+  min-height: calc(100vh - 105px);
   height: 100%;
   padding: 12rem 3rem;
-  background: var(--gradient-primary);
+  background: linear-gradient(180deg, #C5B3C0 0%, #B39DB0 50%, #5D4157 100%);
 }
 
-.intro-bubble {
-  display: flex;
-  width: 42rem;
-  height: 37.6px;
-  margin-block: 6rem;
-  padding: 1.2rem 24.8px 1.2rem 24.8px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5rem;
-  border: 0.8px solid var(--color-secondary);
-  background: linear-gradient(135deg,
-      rgba(93, 65, 87, 0.08),
-      rgba(93, 65, 87, 0.08));
+.Header-Section::before,
+.Header-Section::after {
+  content: "";
+  position: absolute;
+  right: 10rem;
+  top: 10rem;
+  width: 15rem;
+  height: 15rem;
+  pointer-events: none;
+  display: inline-block;
+  background-image: url("../assets/Circle1.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.Header-Section::after {
+  right: unset;
+  top: unset;
+  left: 10rem;
+  bottom: 10rem;
+  width: 8rem;
+  height: 8rem;
+  background-image: url("../assets/Cirlce2.png");
 }
 
 .text-content h1 {
-  font-size: calc(var(--fs-Large-20) + 7.2rem);
+  color: var(--color-black);
+  font-size: calc(var(--fs-Large-20) + 2.8rem);
   font-weight: var(--fw-regular);
   line-height: normal;
+  text-align: start;
+  max-width: 80rem;
+  font-weight: var(--fw-bold);
 }
 
 .text-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   align-self: stretch;
-  max-width: 82rem;
-  min-width: 100%;
   margin-inline: auto;
   text-align: center;
+  padding: 6rem;
+  padding-inline-end: 0;
+  gap: 6rem;
+}
+
+.resp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.resp-grid>img {
+  display: inline-block;
+  width: 60rem;
+  height: 60rem;
+  padding: 0;
+  margin-inline: 20rem;
 }
 
 .text-content .Sub-heading {
@@ -416,13 +450,13 @@ header img {
 .content p,
 .text-content p {
   color: var(--color-gray-100);
-  text-align: center;
+  text-align: start;
   font-size: var(--fs-Large-20);
   font-style: normal;
   font-weight: var(--fw-regular);
   line-height: 28px;
   margin-block: 3rem;
-  padding-inline: 70rem;
+  max-width: 90rem;
 }
 
 .content p {
@@ -913,6 +947,10 @@ header img {
     padding: 1rem 2rem;
   }
 
+  nav a {
+    color: var(--color-gray-100);
+  }
+
   .container {
     padding: 4rem 2rem 0 2rem;
   }
@@ -989,6 +1027,12 @@ header img {
     margin-block: 2rem;
   }
 
+  .resp-grid>img {
+    height: auto;
+    position: absolute;
+    z-index: 1;
+  }
+
   .mb-nav {
     display: inline-block;
     position: fixed;
@@ -996,7 +1040,7 @@ header img {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 12rem;
+    top: 7rem;
     width: 100%;
     height: 100dvh;
     padding-inline: 4rem;
@@ -1031,7 +1075,7 @@ header img {
     display: inline-block;
     width: 100%;
     height: 3px;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
     position: absolute;
     top: 0;
     right: 0;
@@ -1069,23 +1113,26 @@ header img {
     transition: 450ms all ease-in;
   }
 
-  .intro-bubble {
-    width: 40rem;
-    padding: 1.2rem 12px 1.2rem 12px;
-  }
-
   .Header-Section {
     padding: 2rem;
   }
 
   .text-content {
-    padding-block: 0;
+    padding-inline: 2rem;
     max-width: 100%;
+    align-items: center;
+    z-index: 10;
   }
 
-  .text-content p,
-  .text-content h2 {
-    padding-inline: 2rem;
+  .text-content h1,
+  .text-content p {
+    padding: 2rem;
+    border-radius: 10px;
+    border: 3px solid var(--color-secondary);
+    outline: 2px solid var(--color-primary-dark);
+    background: rgba(93, 65, 87, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   .text-content {
@@ -1094,7 +1141,7 @@ header img {
 
   .text-content h1,
   .text-content .Sub-heading {
-    font-size: calc(var(--fs-Large-20) + 3rem);
+    font-size: calc(var(--fs-Large-20) + 1rem);
   }
 
   #contact .heading,
@@ -1108,10 +1155,6 @@ header img {
 @media (max-width:340px) {
   html {
     font-size: 40%;
-  }
-
-  .intro-bubble {
-    padding: 1.2rem 8px 1.2rem 8px;
   }
 
   .package h3,

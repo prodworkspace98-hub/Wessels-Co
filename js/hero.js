@@ -11,30 +11,15 @@ fetch("/data/hero.json")
 
     const fragment = document.createDocumentFragment();
     const elements = [];
-
-    const intro = document.createElement("div");
-    intro.className = "intro-bubble fade-in";
-    const introText = document.createElement("h4");
-    introText.textContent = data.section.intro;
-    intro.appendChild(introText);
-
     const h1 = document.createElement("h1");
     h1.className = "fade-in";
     h1.textContent = data.section.heading[0];
-
-    const h1Sub = document.createElement("h1");
-    h1Sub.className = "Sub-heading fade-in";
-    h1Sub.textContent = data.section.heading[1];
-
-    const h2 = document.createElement("h2");
-    h2.className = "fade-in";
-    h2.textContent = data.section.subheading;
 
     const p = document.createElement("p");
     p.className = "fade-in";
     p.textContent = data.section.description;
 
-    fragment.append(intro, h1, h1Sub, h2, p);
+    fragment.append(h1, p);
 
     const btnWrap = document.createElement("div");
     btnWrap.className = "flex-row fade-in";

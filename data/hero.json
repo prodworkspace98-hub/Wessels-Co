@@ -1,20 +1,17 @@
 {
   "section": {
-    "intro": "Frontend Developer & UI Engineer",
-    "heading": ["Modern Frontend", "Development"],
-    "subheading": "Clean Code. Modern UI. Best Results.",
-    "description": "I build fast, responsive websites and scalable web applications using modern frontend technologies.",
+    "heading": ["Clear, reliable accounting for growing businesses"],
+    "description": "At Wessels & Co Financial Services, we help small to medium-sized businesses make sense of their finances. Our goal is to provide clear, reliable accounting support so you can focus on growing your business with confidence.",
     "buttons": [
       {
-        "text": "Hire Me",
+        "text": "Get in touch today!",
         "href": "#contact",
-        "class": "btn"
+        "class": "btn",
+         "icon": {
+          "src": "/assets/Icon Arrow-right white.svg",
+          "alt": "Arrow Icon"
+        }
       }
-    ],
-    "socials": [
-      { "src": "/assets/github.svg", "alt": "Github" },
-      { "src": "/assets/lindkedn.svg", "alt": "LinkedIn" },
-      { "src": "/assets/gmail.svg", "alt": "Gmail" }
     ]
   }
 }

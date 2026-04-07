@@ -6,9 +6,9 @@
       "href": "#"
     },
     "menu": [
-      { "text": "About", "href": "#about" },
+      { "text": "Home", "href": "#home" },
       { "text": "Services", "href": "#services" },
-      { "text": "Skills", "href": "#skills" },
+      { "text": "About", "href": "#about" },
       { "text": "Pricing", "href": "#packages" },
       { "text": "Contact", "href": "#contact" }
     ]
