@@ -9,7 +9,7 @@
       {
         "title": "Frontend Development",
         "icon": {
-          "src": "/assets/Frontend Development.svg",
+          "src": "/assets/",
           "alt": "Frontend Development",
           "loading": "lazy"
         },
@@ -22,7 +22,7 @@
       {
         "title": "Website Development",
         "icon": {
-          "src": "/assets/Web development Icon.svg",
+          "src": "/assets/",
           "alt": "Web Development",
           "loading": "lazy"
         },
@@ -35,7 +35,7 @@
       {
         "title": "UI Development",
         "icon": {
-          "src": "/assets/UI Development.svg",
+          "src": "/assets/",
           "alt": "UI Development",
           "loading": "lazy"
         },
@@ -48,7 +48,7 @@
       {
         "title": "Optimization",
         "icon": {
-          "src": "/assets/Optimisation.svg",
+          "src": "/assets/",
           "alt": "Optimization",
           "loading": "lazy"
         },

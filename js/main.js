@@ -4,7 +4,7 @@ import { observeElements } from "./engines/animation-engine.js";
 const componentsConfig = [
   { id: "navbar", html: "navbar.html", script: "./navigation.js" },
   { id: "hero", html: "hero.html", script: "./hero.js" },
-  { id: "about", html: "about/about-section.html", script: "./pages/about.js" },
+  { id: "WhyChooseUS", html: "WhyChooseUS/WhyChooseUS-section.html", script: "./pages/WhyChooseUS.js" },
   { id: "services", html: "services/services-section.html", script: "./pages/services.js" },
   { id: "skills", html: "skills/skills.html", script: "./pages/skills.js" },
   { id: "packages", html: "packages/service-packages.html", script: "./pages/service-package.js" },

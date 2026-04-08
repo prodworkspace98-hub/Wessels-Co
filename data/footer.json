@@ -6,17 +6,17 @@
     },
     "links": [
       {
-        "icon": "/assets/github.svg",
+        "icon": "/assets/",
         "alt": "Github",
         "url": "https://github.com/prodworkspace98-hub"
       },
       {
-        "icon": "/assets/lindkedn.svg",
+        "icon": "/assets/",
         "alt": "LinkedIn",
         "url": "https://www.linkedin.com/in/michael-l-a89535184/"
       },
       {
-        "icon": "/assets/gmail.svg",
+        "icon": "/assets/",
         "alt": "Gmail",
         "url": "mailto:mccodeui@gmail.com"
       }

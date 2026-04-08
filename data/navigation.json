@@ -8,8 +8,8 @@
     "menu": [
       { "text": "Home", "href": "#home" },
       { "text": "Services", "href": "#services" },
-      { "text": "About", "href": "#about" },
       { "text": "Pricing", "href": "#packages" },
+      { "text": "FAQ's", "href": "#about" },
       { "text": "Contact", "href": "#contact" }
     ]
   }

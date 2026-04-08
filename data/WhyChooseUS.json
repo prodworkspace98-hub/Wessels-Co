@@ -1,0 +1,39 @@
+{
+  "title": "Why Choose Wessels & Co?",
+  "content": {
+    "heading": "Why Choose Wessels & Co?"
+  },
+  "cards": [
+    {
+      "title": "Expert Guidance",
+      "icon": {
+        "src": "/assets/Icon open page.svg",
+        "alt": "Expert Guidance",
+        "loading": "lazy"
+      },
+      "items": [
+        "Professional accounting services tailored to your business needs"
+      ]
+    },
+    {
+      "title": "Growth Focused",
+      "icon": {
+        "src": "/assets/Icon stats.svg",
+        "alt": "Growth Focused",
+        "loading": "lazy"
+      },
+      "items": ["We help you make informed decisions to grow your business"]
+    },
+    {
+      "title": "Reliable Support",
+      "icon": {
+        "src": "/assets/Icon page Check.svg",
+        "alt": "Reliable Support",
+        "loading": "lazy"
+      },
+      "items": [
+        "Clear, consistent accounting you can count on"
+      ]
+    }
+  ]
+}
