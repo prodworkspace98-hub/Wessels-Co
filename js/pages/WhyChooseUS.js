@@ -35,7 +35,7 @@ fetch("./data/WhyChooseUS.json")
       if (!card) return;
 
       const cardEl = document.createElement("div");
-      cardEl.className = "card card-effect fade-in";
+      cardEl.className = "card card-effect flat-card fade-in";
 
       const content = document.createElement("div");
       content.className = "card-content";

@@ -35,14 +35,7 @@ fetch("/data/services.json")
       const title = document.createElement("h2");
       title.textContent = card.title;
 
-      const ul = document.createElement("ul");
-      card.items.forEach((item) => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        ul.appendChild(li);
-      });
-
-      content.append(span, title, ul);
+      content.append(span, title);
       cardEl.appendChild(content);
 
       fragment.appendChild(cardEl);

@@ -2,61 +2,65 @@
   "section": {
     "class": "container",
     "content": {
-      "heading": "Services",
-      "subtext": "What I can do for you"
+      "heading": "Services You Should Know About",
+      "subtext": "Core Services"
     },
     "cards": [
       {
-        "title": "Frontend Development",
+        "title": "Financial statements",
         "icon": {
-          "src": "/assets/",
-          "alt": "Frontend Development",
+          "src": "/assets/Icon page fold.svg",
+          "alt": "Financial statements",
           "loading": "lazy"
-        },
-        "items": [
-          "Angular Applications",
-          "Responsive Web Development",
-          "UI Implementation from Figma"
-        ]
+        }
       },
       {
-        "title": "Website Development",
+        "title": "Bookkeeping",
         "icon": {
-          "src": "/assets/",
-          "alt": "Web Development",
+          "src": "/assets/Icon page fold.svg",
+          "alt": "Bookkeeping",
           "loading": "lazy"
-        },
-        "items": [
-          "Business websites",
-          "Landing pages",
-          "Portfolio sites"
-        ]
+        }
       },
       {
-        "title": "UI Development",
+        "title": "Tax returns (individual & business)",
         "icon": {
-          "src": "/assets/",
-          "alt": "UI Development",
+          "src": "/assets/Icon page fold.svg",
+          "alt": "Tax returns (individual & business)",
           "loading": "lazy"
-        },
-        "items": [
-          "Figma to HTML/CSS",
-          "Tailwind UI builds",
-          "Component-based UI systems"
-        ]
+        }
       },
       {
-        "title": "Optimization",
+        "title": "VAT submissions",
         "icon": {
-          "src": "/assets/",
-          "alt": "Optimization",
+          "src": "/assets/Icon page fold.svg",
+          "alt": "VAT submissions",
           "loading": "lazy"
-        },
-        "items": [
-          "Performance tuning",
-          "SEO optimization",
-          "Code refactoring"
-        ]
+        }
+      },
+       {
+        "title": "Payroll processing",
+        "icon": {
+          "src": "/assets/Icon page fold.svg",
+          "alt": "Payroll processing",
+          "loading": "lazy"
+        }
+      },
+       {
+        "title": "Payroll processing",
+        "icon": {
+          "src": "/assets/Icon page fold.svg",
+          "alt": "Payroll processing",
+          "loading": "lazy"
+        }
+      },
+       {
+        "title": "Payroll processing",
+        "icon": {
+          "src": "/assets/Icon page fold.svg",
+          "alt": "Payroll processing",
+          "loading": "lazy"
+        }
       }
     ]
   }
