@@ -1,22 +1,37 @@
 import { observeElements } from "../engines/animation-engine.js";
 
-fetch("/data/services.json")
-  .then((res) => {
+async function loadServices() {
+  try {
+    const res = await fetch("/data/services.json");
     if (!res.ok) throw new Error("Failed to load services data");
-    return res.json();
-  })
-  .then((data) => {
+
+    const data = await res.json();
+
     const section = document.getElementById("services");
     if (!section) return;
 
-    section.querySelector("#service-heading").textContent = data.section.content.heading;
-    section.querySelector("#subtext").textContent = data.section.content.subtext;
+    const heading = section.querySelector("#service-heading");
+    const subtext = section.querySelector("#subtext");
+    const subtextHV = section.querySelector("#subtext-high-value");
 
     const container = section.querySelector("#cards");
+    const containerHv = section.querySelector("#cards-high-value");
+
+    if (!container || !containerHv) return;
+
+    
+    heading.textContent = data.section.content.heading;
+    subtext.textContent = data.section.content.subtext;
+    subtextHV.textContent = data.sectionHV.content.subtext;
+
+    // Fragments (IMPORTANT: separate)
     const fragment = document.createDocumentFragment();
+    const fragmentHv = document.createDocumentFragment();
+
     const newCards = [];
 
-    data.section.cards.forEach((card) => {
+    
+    function createCard(card) {
       const cardEl = document.createElement("div");
       cardEl.className = "card card-effect fade-in";
 
@@ -38,11 +53,32 @@ fetch("/data/services.json")
       content.append(span, title);
       cardEl.appendChild(content);
 
+      return cardEl;
+    }
+
+
+    data.section.cards.forEach((card) => {
+      const cardEl = createCard(card);
       fragment.appendChild(cardEl);
       newCards.push(cardEl);
     });
 
+    // High-value cards (4)
+    data.sectionHV.cards.forEach((card) => {
+      const cardEl = createCard(card);
+      fragmentHv.appendChild(cardEl);
+      newCards.push(cardEl);
+    });
+
+    // Append correctly
     container.appendChild(fragment);
+    containerHv.appendChild(fragmentHv);
+
     observeElements(newCards);
-  })
-  .catch(console.error);
+
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+loadServices();

@@ -484,7 +484,7 @@ header img {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.flat-card{
+.flat-card {
   border: 0;
   background: var(--color-white);
 }
@@ -502,7 +502,8 @@ header img {
   align-items: center;
   justify-content: flex-start;
 }
-.flat-card h2{
+
+.flat-card h2 {
   color: var(--color-primary-dark);
   text-align: center;
   justify-content: center;
@@ -519,9 +520,10 @@ header img {
   border-radius: 10px;
   background: var(--color-secondary);
 }
-.flat-card .icon{
+
+.flat-card .icon {
   border-radius: 50%;
-  margin-inline:auto;
+  margin-inline: auto;
 }
 
 .card-content ul {
@@ -553,10 +555,45 @@ header img {
 .card-content ul li::marker {
   color: var(--color-secondary);
 }
-.flat-card ul li{
+
+.flat-card ul li {
   text-align: center;
   color: var(--text-secondary);
   list-style: none;
+}
+
+#services .cards {
+  gap: 1.2rem;
+  justify-content: flex-start;
+  margin-block-start: 0;
+}
+
+#services .card {
+  border-radius: 10px;
+  min-width: 38rem;
+  margin: 2rem 1rem;
+  border: 0.8px solid var(--color-gray-100);
+  background: var(--color-white);
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+#services .card-content .icon {
+  background: transparent;
+  padding: 0;
+  align-items: start;
+  justify-content: start;
+}
+
+#subtext,
+#subtext-high-value {
+  margin-block-end: 0;
+  font-weight: var(--fw-bold);
+}
+
+#cards-high-value .card{
+  color: var(--color-white);
+  background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
 }
 
 .icon-badge {
@@ -907,7 +944,7 @@ header img {
 
 @media (max-width: 1220px) {
 
-  .g-paragraphs{
+  .g-paragraphs {
     min-width: 100%;
     padding: 2.5rem;
   }
@@ -959,7 +996,7 @@ header img {
     padding: 4rem 2rem 0 2rem;
   }
 
-  .g-paragraphs{
+  .g-paragraphs {
     min-width: 100%;
     padding: 1.5rem;
   }
@@ -1192,7 +1229,7 @@ header img {
     padding-inline: 2rem;
   }
 
-  .g-paragraphs{
+  .g-paragraphs {
     min-width: 100%;
     padding: 2.5rem 1rem;
   }

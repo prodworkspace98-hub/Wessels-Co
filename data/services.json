@@ -1,6 +1,5 @@
 {
   "section": {
-    "class": "container",
     "content": {
       "heading": "Services You Should Know About",
       "subtext": "Core Services"
@@ -10,56 +9,75 @@
         "title": "Financial statements",
         "icon": {
           "src": "/assets/Icon page fold.svg",
-          "alt": "Financial statements",
-          "loading": "lazy"
+          "alt": "Financial statements"
         }
       },
       {
         "title": "Bookkeeping",
-        "icon": {
-          "src": "/assets/Icon page fold.svg",
-          "alt": "Bookkeeping",
-          "loading": "lazy"
-        }
+        "icon": { "src": "/assets/Icon open page.svg", "alt": "Bookkeeping" }
       },
       {
         "title": "Tax returns (individual & business)",
-        "icon": {
-          "src": "/assets/Icon page fold.svg",
-          "alt": "Tax returns (individual & business)",
-          "loading": "lazy"
-        }
+        "icon": { "src": "/assets/Icon money.svg", "alt": "Tax returns" }
       },
       {
         "title": "VAT submissions",
         "icon": {
-          "src": "/assets/Icon page fold.svg",
-          "alt": "VAT submissions",
-          "loading": "lazy"
+          "src": "/assets/Icon calculator.svg",
+          "alt": "VAT submissions"
         }
       },
-       {
+      {
         "title": "Payroll processing",
         "icon": {
-          "src": "/assets/Icon page fold.svg",
-          "alt": "Payroll processing",
-          "loading": "lazy"
+          "src": "/assets/Icon account.svg",
+          "alt": "Payroll processing"
         }
       },
-       {
-        "title": "Payroll processing",
+      {
+        "title": "SARS compliance",
         "icon": {
-          "src": "/assets/Icon page fold.svg",
-          "alt": "Payroll processing",
-          "loading": "lazy"
+          "src": "/assets/Icon paper group.svg",
+          "alt": "SARS compliance"
         }
       },
-       {
-        "title": "Payroll processing",
+      {
+        "title": "Business registration",
         "icon": {
-          "src": "/assets/Icon page fold.svg",
-          "alt": "Payroll processing",
-          "loading": "lazy"
+          "src": "/assets/Icon suitecase.svg",
+          "alt": "Business registration"
+        }
+      }
+    ]
+  },
+  "sectionHV": {
+    "content": {
+      "subtext": "High-Value Services"
+    },
+    "cards": [
+      {
+        "title": "Cash flow planning",
+        "icon": {
+          "src": "/assets/Icon stats white.svg",
+          "alt": "Cash flow planning"
+        }
+      },
+      {
+        "title": "Financial consulting",
+        "icon": {
+          "src": "/assets/Icon suitecase white.svg",
+          "alt": "Financial consulting"
+        }
+      },
+      {
+        "title": "Tax planning",
+        "icon": { "src": "/assets/Icon caclc white.svg", "alt": "Tax planning" }
+      },
+      {
+        "title": "CFO-as-a-service",
+        "icon": {
+          "src": "/assets/Icon target white.svg",
+          "alt": "CFO-as-a-service"
         }
       }
     ]
