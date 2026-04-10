@@ -254,11 +254,11 @@ header img {
   font-size: var(--fs-Normal-16);
   font-weight: 500;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(93, 65, 87, 0.6);
+  background: var(--color-primary-dark);
   cursor: pointer;
   backdrop-filter: blur(8px);
   transition: all 0.2s ease;
-  box-shadow: 0 5px 0 0 var(--color-primary);
+  box-shadow: 0 8px 20px rgba(93, 65, 87, 0.25);
   text-decoration: none;
   color: var(--color-white);
   display: flex;
@@ -272,8 +272,8 @@ header img {
 }
 
 .btn-primary {
-  background: var(--color-secondary);
-  color: var(--color-primary-dark);
+  background: var(--color-primary-dark);
+  color: var(--color-white);
   border: none;
   box-shadow: 0 8px 20px rgba(93, 65, 87, 0.25);
 }
@@ -479,14 +479,16 @@ header img {
   padding: 2.5rem 4rem 2.5rem 4rem;
   min-width: 32rem;
   max-width: var(--set-width);
-  background: var(--gradient-light);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 0.8px solid var(--color-gray-100);
+  background: var(--color-white);
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
 }
 
 .flat-card {
   border: 0;
   background: var(--color-white);
+  box-shadow: none;
 }
 
 .cards .card-content {
@@ -509,6 +511,7 @@ header img {
   justify-content: center;
 }
 
+.card-content .number,
 .card-content .icon {
   display: flex;
   height: 48px;
@@ -521,9 +524,22 @@ header img {
   background: var(--color-secondary);
 }
 
+.card-content .number {
+  background: var(--color-primary-dark);
+  margin-block: 4rem;
+  color: var(--color-white);
+  font-weight: var(--fw-bold);
+}
+
+.card-content .number,
 .flat-card .icon {
   border-radius: 50%;
   margin-inline: auto;
+}
+
+.flat-card .card-content div {
+  width: 100%;
+  text-align: center;
 }
 
 .card-content ul {
@@ -547,7 +563,7 @@ header img {
 
 .card-content ul li {
   list-style: disc;
-  color: var(--color-gray-100);
+  color: var(--text-secondary);
   margin-inline-start: 10px;
 }
 
@@ -560,6 +576,26 @@ header img {
   text-align: center;
   color: var(--text-secondary);
   list-style: none;
+}
+
+.industries .card {
+  --set-width: 26rem;
+  min-width: 26rem;
+  max-width: var(--set-width);
+  align-items: center;
+  justify-content: center;
+}
+
+.industries h2 {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.industries .icon {
+  margin-block: 3rem;
+  border-radius: 50%;
+  margin-inline: auto;
 }
 
 #services .cards {
@@ -585,13 +621,13 @@ header img {
   justify-content: start;
 }
 
-#subtext,
+#pricingTable-heading #subtext,
 #subtext-high-value {
   margin-block-end: 0;
   font-weight: var(--fw-bold);
 }
 
-#cards-high-value .card{
+#cards-high-value .card {
   color: var(--color-white);
   background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
 }
@@ -627,6 +663,14 @@ header img {
   background: var(--color-primary-dark);
 }
 
+#packages .card {
+  height: 70rem;
+}
+
+#packages .card-content {
+  height: 100%;
+}
+
 .project .tab {
   border-radius: 5rem;
   background: var(--color-gray-400);
@@ -642,7 +686,7 @@ header img {
 }
 
 .package h3 {
-  font-size: calc(var(--fs-Large-20) + 4rem);
+  font-size: calc(var(--fs-Large-20) + 1.5rem);
   font-weight: var(--fw-bold);
   line-height: 56px;
   background: var(--gradient-primary);
@@ -652,8 +696,15 @@ header img {
   margin-block: 1.5rem;
 }
 
+.recommended .package h3 {
+  background: var(--gradient-light);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .package p {
-  color: var(--color-gray-100);
+  color: var(--text-primary);
   font-size: 16px;
   font-weight: var(--fw-regular);
   line-height: 24px;
@@ -662,16 +713,28 @@ header img {
 }
 
 .package .btn {
-  margin-block-start: 4rem;
+  margin-block-start: auto;
+}
+
+.recommended h3,
+.recommended .package h2,
+.recommended .package li,
+.recommended p {
+  color: var(--color-white);
+}
+
+.recommended .btn {
+  color: var(--color-primary-dark);
+  background-color: var(--color-white);
 }
 
 .recommended {
   position: relative;
   border-radius: 14px;
+  color: var(--color-white);
   border: 1.6px solid var(--color-secondary);
-  background: linear-gradient(135deg, rgba(93, 65, 87, 0.08), rgba(93, 65, 87, 0.08));
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 15px -3px var(--color-primary), 0 4px 6px -4px var(--color-secondary);
+  background: linear-gradient(180deg, #5D4157 0%, #3A2936 100%);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
 }
 
 .recommended::after {
@@ -687,33 +750,44 @@ header img {
   padding: 4px 10px;
 }
 
-.add-on-table {
+.pricing-table {
   display: flex;
   width: 100%;
   max-width: 240rem;
-  margin: 12rem auto;
-  height: 36rem;
-  padding: 6rem 8rem 0.8px 6rem;
+  margin: 6rem auto;
+  height: 26rem;
+  padding: 0;
   flex-direction: column;
   align-items: center;
+  justify-content: stretch;
   gap: 24px;
-  border-radius: 12px;
-  border: .5px solid var(--color-primary);
-  background: var(--color-primary-dark);
-  box-shadow: 0 5px 0 0 var(--color-primary);
+  border-radius: 14px;
+  border: 0.8px solid var(--color-gray-100);
+  background: linear-gradient(180deg, #F9F9F9 0%, #F3F4F6 100%);
 }
 
-.add-on-table>div {
+.pricing-table>div {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.add-on-table h1 {
-  display: inline-block;
-  width: 100%;
-  text-align: left;
+.pricing-table .w-full:first-child .row {
+  background-color: var(--color-primary-dark);
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px 14px 0 0;
+  padding-block: 3rem;
+}
+
+.pricing-table .w-full:last-child .row {
+  border: 0
+}
+
+.pricing-table .w-full:first-child .row .col {
   color: var(--color-white);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-Medium-18);
 }
 
 .cover-img {
@@ -731,24 +805,23 @@ header img {
 .row {
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid var(--color-gray-400);
+  border-bottom: 0.8px solid var(--color-gray-100);
   justify-content: space-between;
   height: 4.5rem;
-  width: calc((100%/3) - 20px);
+  width: 100%;
+  padding-inline: 4rem;
 }
 
 .col {
   font-size: var(--fs-Normal-16);
+  font-weight: var(--fw-regular);
   display: inline-block;
-  width: calc((100%/3) - 10px);
+  color: var(--text-primary);
+  width: calc((100%/2) - 10px);
 }
 
 .col:nth-child(2) {
   text-align: end;
-  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-secondary) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .txt-clr {
@@ -781,6 +854,11 @@ header img {
   margin-block: var(--mY-Size);
 }
 
+.pY-generic[data-space] {
+  --mY-Size: 5rem;
+  padding-block: var(--mY-Size);
+}
+
 .isHidden {
   display: none !important;
 }
@@ -795,10 +873,15 @@ header img {
   max-width: calc((var(--set-width) / 3) - 50px);
 }
 
+
+#contact{
+  background: linear-gradient(180deg, #C5B3C0 0%, #B39DB0 50%, #5D4157 100%);
+}
 .footer {
   padding: 12rem 22rem 0 22rem;
   width: 100%;
   margin-inline: auto;
+  background-color: var(--color-primary-dark);
 }
 
 .footer__top {
@@ -931,12 +1014,12 @@ header img {
     max-width: 100%;
   }
 
-  .add-on-table {
+  .pricing-table {
     height: auto;
     padding: 6rem 8rem 6rem 6rem;
   }
 
-  .add-on-table>div {
+  .pricing-table>div {
     display: inline-block;
   }
 
@@ -967,12 +1050,12 @@ header img {
     max-width: 100%;
   }
 
-  .add-on-table {
+  .pricing-table {
     height: auto;
     padding: 6rem 8rem 6rem 6rem;
   }
 
-  .add-on-table>div {
+  .pricing-table>div {
     display: inline-block;
   }
 
@@ -1033,25 +1116,25 @@ header img {
     margin-inline-end: 2rem;
   }
 
-  .add-on-table {
+  .pricing-table {
     height: auto;
     padding-block-end: 6rem;
     max-width: 46rem;
     padding: 3rem 4rem 3rem 3rem;
   }
 
-  .add-on-table .col,
-  .add-on-table .row {
+  .pricing-table .col,
+  .pricing-table .row {
     width: 100%;
     font-size: 15px;
   }
 
-  .add-on-table .row {
+  .pricing-table .row {
     height: 6rem;
     align-items: center;
   }
 
-  .add-on-table>div {
+  .pricing-table>div {
     display: inline-block;
   }
 

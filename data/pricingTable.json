@@ -1,0 +1,41 @@
+{
+  "section": {
+    "content": {
+      "heading": "Basic Individuals"
+    },
+    "groups": [
+          {
+        "rows": [
+          {
+            "service": "Service",
+            "price": "Price"
+          }
+        ]
+      },
+      {
+        "rows": [
+          {
+            "service": "Simple tax return",
+            "price": "R350 – R800"
+          }
+        ]
+      },
+      {
+        "rows": [
+          {
+            "service": "Complex tax return",
+            "price": "R900 – R2,500"
+          }
+        ]
+      },
+      {
+        "rows": [
+          {
+            "service": "Tax consultation",
+            "price": "R500 – R1,200"
+          }
+        ]
+      }
+    ]
+  }
+}

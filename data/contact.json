@@ -1,29 +1,12 @@
 {
   "section": {
     "content": {
-      "heading": "Let's Work Together"
+      "heading": "Ready to take control of your finances?",
+      "subHeading":"Book a free consultation to see how we can support your business growth"
     },
-    "cards": [
-      {
-        "title": "Email",
-        "icon": {
-          "src": "/assets/",
-          "alt": "Email"
-        },
-        "text": "mccodeui@gmail.com"
-      },
-      {
-        "title": "Location",
-        "icon": {
-          "src": "/assets/",
-          "alt": "Location"
-        },
-        "text": "Remote / South Africa"
-      }
-    ],
     "cta": {
       "text": "Get In Touch",
-      "href": "mailto:mccodeui@gmail.com",
+      "href": "mailto:Marichele@wessels.co.za",
       "class": "btn btn-primary"
     }
   }

@@ -12,6 +12,9 @@ fetch("/data/service-package.json")
     const heading = section.querySelector("#packages-heading");
     if (heading) heading.textContent = data.section.content.heading;
 
+     const subheading = section.querySelector("#subtext");
+    if (subheading) subheading.textContent = data.section.content.subheading;
+
     const container = section.querySelector("#packages-cards");
     if (!container) return;
 

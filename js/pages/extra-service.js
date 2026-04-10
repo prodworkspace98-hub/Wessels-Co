@@ -9,6 +9,12 @@ fetch("/data/extra-service.json")
     const section = document.getElementById("extra");
     if (!section) return;
 
+     const heading = section.querySelector("#extra-heading");
+    if (heading) heading.textContent = data.section.content.heading;
+
+     const subheading = section.querySelector("#subtext");
+    if (subheading) subheading.textContent = data.section.content.subheading;
+
     const container = section.querySelector("#extra-services-cards");
     if (!container) return;
 
@@ -25,20 +31,18 @@ fetch("/data/extra-service.json")
       const title = document.createElement("h2");
       title.textContent = card.title;
 
-      const subtitle = document.createElement("span");
-      subtitle.textContent = card.subtitle;
+      const span = document.createElement("span");
+      span.className = "icon";
 
-      const price = document.createElement("h3");
-      price.textContent = card.price;
+      if (card.icon?.src) {
+        const icon = document.createElement("img");
+        icon.src = card.icon.src;
+        icon.alt = card.icon.alt || "";
+        icon.loading = card.icon.loading || "lazy";
+        span.appendChild(icon);
+      }
 
-      const ul = document.createElement("ul");
-      card.features.forEach((f) => {
-        const li = document.createElement("li");
-        li.textContent = f;
-        ul.appendChild(li);
-      });
-
-      content.append(title, subtitle, price, ul);
+      content.append(span,title);
       cardEl.appendChild(content);
 
       fragment.appendChild(cardEl);

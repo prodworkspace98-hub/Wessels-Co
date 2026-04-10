@@ -1,26 +1,21 @@
 {
   "section": {
     "brand": {
-      "title": "MC Codes",
-      "tagline": "Modern Frontend Development"
+      "title": "Wessels & Co",
+      "tagline": "Providing clear, reliable accounting for growing businesses"
     },
     "links": [
       {
-        "icon": "/assets/",
-        "alt": "Github",
-        "url": "https://github.com/prodworkspace98-hub"
+        "icon": "/assets/whatsapp.png",
+        "alt": "WhatsApp",
+        "url": "https://wa.me/072 270 0309"
       },
       {
-        "icon": "/assets/",
-        "alt": "LinkedIn",
-        "url": "https://www.linkedin.com/in/michael-l-a89535184/"
-      },
-      {
-        "icon": "/assets/",
+        "icon": "/assets/Mail.png",
         "alt": "Gmail",
-        "url": "mailto:mccodeui@gmail.com"
+        "url": "mailto:Marichele@wessels.co.za.com"
       }
     ],
-    "copyright": "© 2026 MC Codes. All rights reserved."
+    "copyright": "© 2026 Wessels & Co Financial Services. All rights reserved."
   }
 }

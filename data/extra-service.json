@@ -1,52 +1,57 @@
 {
   "section": {
     "content": {
-      "heading": "Extra Services"
+      "heading": "Industries we support",
+      "subheading": "Specialized accounting services for diverse businesses"
     },
     "cards": [
       {
-        "title": "Maintenance Services",
-        "subtitle": "Monthly Support Plans",
-        "price": "R500-1000",
-        "features": [
-          "Bug fixes & updates",
-          "Security patches",
-          "Performance monitoring",
-          "Content updates"
-        ]
+        "title": "Freelancers",
+        "icon": {
+          "src": "/assets/Icon suitecase.svg",
+          "alt": "Freelancers",
+          "loading": "lazy"
+        }
       },
       {
-        "title": "Hourly Consulting",
-        "subtitle": "Flexible Support",
-        "price": "R1,000-3,000 /HR",
-        "features": [
-          "Code review",
-          "Technical consulting",
-          "Architecture planning",
-          "Developer training"
-        ]
+        "title": "Contractors",
+        "icon": {
+          "src": "/assets/Icon hammer.svg",
+          "alt": "Contractors",
+          "loading": "lazy"
+        }
       },
       {
-        "title": "Emergency Support",
-        "subtitle": "24/7 Available",
-        "price": "R3,500-4,000",
-        "features": [
-          "Urgent bug fixes",
-          "Site recovery",
-          "Emergency updates",
-          "Priority support"
-        ]
+        "title": "Retail businesses",
+        "icon": {
+          "src": "/assets/Icon box.svg",
+          "alt": "Retail businesses",
+          "loading": "lazy"
+        }
       },
       {
-        "title": "Retainer Package",
-        "subtitle": "Long-term Partnership",
-        "price": "R25,000-45,000+",
-        "features": [
-          "Dedicated developer time",
-          "Ongoing development",
-          "Priority support",
-          "Monthly reports"
-        ]
+        "title": "Consultants",
+        "icon": {
+          "src": "/assets/Icon account.svg",
+          "alt": "Consultants",
+          "loading": "lazy"
+        }
+      },
+      {
+        "title": "Small agencies",
+        "icon": {
+          "src": "/assets/Icon light bulb.svg",
+          "alt": "Small agencies",
+          "loading": "lazy"
+        }
+      },
+      {
+        "title": "Startups",
+        "icon": {
+          "src": "/assets/Icon spacship.svg",
+          "alt": "Startups",
+          "loading": "lazy"
+        }
       }
     ]
   }

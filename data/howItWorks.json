@@ -1,0 +1,48 @@
+{
+  "title": "How it works",
+  "content": {
+    "heading": "How it works"
+  },
+  "cards": [
+    {
+      "title": "Free consultation",
+      "number": "1",
+      "icon": {
+        "src": "/assets/Icon speach bubble.svg",
+        "alt": "Free consultation",
+        "loading": "lazy"
+      },
+      "items": ["We discuss your business and accounting needs."]
+    },
+    {
+      "title": "Choose a package",
+      "number": "2",
+      "icon": {
+        "src": "/assets/Icon box with check.svg",
+        "alt": "Choose a package",
+        "loading": "lazy"
+      },
+      "items": ["Select the service package that suits you."]
+    },
+    {
+      "title": "We handle your finances",
+      "number": "3",
+      "icon": {
+        "src": "/assets/Icon suitecase.svg",
+        "alt": "We handle your finances",
+        "loading": "lazy"
+      },
+      "items": ["Bookkeeping, compliance, and reporting."]
+    },
+    {
+      "title": "Grow your business",
+      "number": "4",
+      "icon": {
+        "src": "/assets/Icon stats.svg",
+        "alt": "Grow your business",
+        "loading": "lazy"
+      },
+      "items": ["Clear financial insights and advice."]
+    }
+  ]
+}

@@ -1,21 +1,20 @@
 {
   "section": {
     "content": {
-      "heading": "Service Packages"
+      "heading": " Pricing Plans",
+      "subheading":"Small Business Packages"
     },
     "cards": [
       {
-        "title": "Starter Website",
-        "price": "R6,500",
-        "description": "Perfect for small businesses and startups",
+        "title": "Starter Package",
+        "price": "R1,500 – R2,500",
+        "description": "Perfect for new businesses getting started",
         "divide": 3,
         "recommended": false,
         "features": [
-          "5 pages",
-          "Responsive design",
-          "Contact form",
-          "Basic SEO",
-          "2 weeks delivery"
+          "Bookkeeping",
+          "Basic financial reports",
+          "SARS submissions"
         ],
         "button": {
           "text": "Get Started",
@@ -23,18 +22,16 @@
         }
       },
       {
-        "title": "Business Website",
-        "price": "R12,000",
-        "description": "For growing businesses that need more",
+        "title": "Growth Package",
+        "price": "R3,000 – R6,000",
+        "description": "Ideal for growing businesses",
         "divide": 3,
         "recommended": true,
         "features": [
-          "Custom design",
-          "CMS integration",
-          "Performance optimization",
-          "Analytics setup",
-          "Mobile-first approach",
-          "3 weeks delivery"
+          "Full bookkeeping",
+          "VAT",
+          "Payroll",
+          "Financial statements"
         ],
         "button": {
           "text": "Get Started",
@@ -42,18 +39,17 @@
         }
       },
       {
-        "title": "Premium Website",
-        "price": "R25,000+",
-        "description": "Full-scale custom web applications",
+        "title": "Premium Package",
+        "price": "R7,000 – R15,000+",
+        "description": "Comprehensive support for established businesses",
         "divide": 3,
         "recommended": false,
         "features": [
-          "Custom UI/UX design",
-          "Advanced features",
+          "Full accounting",
+          "CFO advisory",
           "API integrations",
-          "E-commerce functionality",
-          "Custom animations",
-          "Ongoing support"
+          "Tax planning",
+          "Monthly reports"
         ],
         "button": {
           "text": "Get Started",

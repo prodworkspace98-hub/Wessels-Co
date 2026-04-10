@@ -9,7 +9,7 @@
       { "text": "Home", "href": "#home" },
       { "text": "Services", "href": "#services" },
       { "text": "Pricing", "href": "#packages" },
-      { "text": "FAQ's", "href": "#about" },
+      { "text": "FAQ's", "href": "#howItWorks" },
       { "text": "Contact", "href": "#contact" }
     ]
   }

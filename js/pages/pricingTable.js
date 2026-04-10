@@ -1,16 +1,16 @@
 import { observeElements } from "../engines/animation-engine.js";
 
-fetch("/data/addon.json")
+fetch("/data/pricingTable.json")
   .then((res) => {
     if (!res.ok) throw new Error("Failed to load add-on services data");
     return res.json();
   })
   .then((data) => {
-    const section = document.querySelector(".add-on-table");
-    if (!section) return;
+    const mainHeading = document.querySelector("#pricingTable-heading");
+    if (mainHeading) mainHeading.textContent = data.section.content.heading;
 
-    const heading = section.querySelector("h1");
-    if (heading) heading.textContent = data.section.content.heading;
+    const section = document.querySelector(".pricing-table");
+    if (!section) return;
 
     const fragment = document.createDocumentFragment();
     const rowsToAnimate = [];
