@@ -873,10 +873,106 @@ header img {
   max-width: calc((var(--set-width) / 3) - 50px);
 }
 
+.dropdown-group {
+  margin-block-start: 6rem;
+}
 
-#contact{
+.dropdown-group details {
+  display: flex;
+  padding: 20.8px 20.8px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 0.8px solid var(--border-color);
+  margin-block-end: 2rem;
+  background: var(--color-white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+.dropdown-group summary {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+.dropdown-group summary div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-primary-dark);
+}
+
+.dropdown-group p {
+  border-top: 2px solid var(--color-gray-100);
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  max-width: 100%;
+
+}
+
+.dropdown-group h1 {
+  font-size: calc(var(--fs-Large-20) + 2rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary-dark);
+}
+
+.dropdown-group span {
+  background: var(--color-white);
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  pointer-events: none;
+  width: 4rem;
+  height: 4rem;
+}
+
+.dropdown-group span::before,
+.dropdown-group span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: .2rem;
+  background-color: var(--color-primary);
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-group span::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.dropdown-group details[open] span::after {
+  transition: all 450ms ease-in-out;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.dropdown-group details[open] {
+  display: block;
+  background: var(--gradient-primary);
+  transition: all 450ms ease-in-out;
+}
+
+.dropdown-group details[open] h1,
+.dropdown-group details[open] div {
+  transition: 350ms all ease-in;
+  color: var(--color-gray-100);
+}
+
+
+#contact {
   background: linear-gradient(180deg, #C5B3C0 0%, #B39DB0 50%, #5D4157 100%);
 }
+
 .footer {
   padding: 12rem 22rem 0 22rem;
   width: 100%;
@@ -1085,7 +1181,7 @@ header img {
   }
 
   .heading {
-    font-size: calc(var(--fs-Large-20) + 2rem);
+    font-size: calc(var(--fs-Large-20) + 1rem);
     line-height: calc(var(--fs-Large-20) + 2rem);
   }
 
@@ -1289,6 +1385,30 @@ header img {
   #skills .heading,
   #services .heading {
     margin: 0;
+  }
+
+  .dropdown-group summary,
+  .dropdown-group details {
+    padding: 12px;
+  }
+
+  .dropdown-group span {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .dropdown-group summary div {
+    max-width: 36rem;
+  }
+  .industries .cards{
+    gap: 1rem;
+  }
+
+  .industries .card {
+    --set-width: 22rem;
+    min-width: 22rem;
+    margin-block: 0;
+    max-width: var(--set-width);
   }
 }
 

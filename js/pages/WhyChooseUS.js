@@ -6,7 +6,6 @@ fetch("./data/WhyChooseUS.json")
     return res.json();
   })
   .then((data) => {
-    console.log("WhyChooseUS data:", data);
 
     const section = document.getElementById("WhyChooseUS");
     if (!section) {

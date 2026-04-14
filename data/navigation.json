@@ -6,7 +6,7 @@
       "href": "#"
     },
     "menu": [
-      { "text": "Home", "href": "#home" },
+      { "text": "Home", "href": "#hero" },
       { "text": "Services", "href": "#services" },
       { "text": "Pricing", "href": "#packages" },
       { "text": "FAQ's", "href": "#howItWorks" },

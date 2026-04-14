@@ -6,7 +6,6 @@ fetch("./data/howItWorks.json")
     return res.json();
   })
   .then((data) => {
-    console.log("How It Works data:", data);
 
     const section = document.getElementById("howItWorks");
     if (!section) {

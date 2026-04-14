@@ -1,0 +1,41 @@
+{
+  "section": {
+    "id": "faq",
+    "content": {
+      "heading": "Frequently Asked Questions",
+      "subHeading": "Everything you need to know about our services"
+    },
+    "faqs": [
+      {
+        "id": "01",
+        "question": "Do you help with SARS tax returns?",
+        "answer": "Yes, we assist individuals and businesses with submissions to South African Revenue Service."
+      },
+      {
+        "id": "02",
+        "question": "What accounting software do you support?",
+        "answer": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+      },
+      {
+        "id": "03",
+        "question": "Do I need monthly bookkeeping?",
+        "answer": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+      },
+      {
+        "id": "04",
+        "question": "Can freelancers use your services?",
+        "answer": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+      },
+      {
+        "id": "05",
+        "question": "What are your response times?",
+        "answer": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+      },
+      {
+        "id": "06",
+        "question": "Do you offer custom packages?",
+        "answer": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+      }
+    ]
+  }
+}
