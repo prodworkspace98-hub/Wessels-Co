@@ -247,7 +247,7 @@ header img {
 
 .btn {
   text-align: center;
-  padding: 2rem 3.5rem;
+  padding: 1.2rem 3.5rem;
   border-radius: 5rem;
   height: auto;
   max-height: 6.5rem;
@@ -1214,9 +1214,8 @@ header img {
 
   .pricing-table {
     height: auto;
-    padding-block-end: 6rem;
     max-width: 46rem;
-    padding: 3rem 4rem 3rem 3rem;
+    padding: 0 0;
   }
 
   .pricing-table .col,
